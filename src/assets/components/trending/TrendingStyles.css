@@ -1,0 +1,48 @@
+.trending-main-div {
+  background-color: #f4edf2;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-bottom: 3rem;
+  left: 0;
+  right: 0;
+}
+h3 {
+  padding: 3rem 0;
+  text-align: center;
+  font-weight: 1200;
+  font-size: x-large;
+}
+p,
+span {
+  color: #795376;
+  margin: 0.5rem 0;
+}
+.trending-main-div p:hover {
+  color: var(--primary-dark);
+}
+.pillow1,
+.pillow2,
+.pillow3,
+.pillow4,
+.pillow5,
+.pillow6 {
+  margin: 1rem 1rem;
+}
+img {
+  width: 95%;
+}
+.pillow-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 2rem;
+}
+@media screen and (max-width: 940px) {
+  .pillow-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trending-main-div {
+    width: 100%;
+  }
+}

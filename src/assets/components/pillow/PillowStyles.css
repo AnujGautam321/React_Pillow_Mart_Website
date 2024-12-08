@@ -1,0 +1,97 @@
+.pillow-main-div {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+}
+.pillow-first-div, .pillow-second-div, .pillow-third-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 2rem;
+}
+.pillow-first-div .bottom , .pillow-second-div .bottom, .pillow-third-div .bottom {
+    width: 26.526rem;
+    height: 23.438rem;
+    background-color: var(--primary-dark);
+}
+
+.pillow-first-div .right, .pillow-second-div .right, .pillow-third-div .right {
+    width: 100%;
+}
+.pillow-first-div .img-container, .pillow-second-div .img-container, .pillow-third-div .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.pillow-first-div .top > img,.pillow-first-div .bottom, .pillow-second-div .top > img,.pillow-second-div .bottom, .pillow-third-div .top > img,.pillow-third-div .bottom  {
+    max-width: 60%;   
+}
+.pillow-first-div .bottom, .pillow-second-div .bottom, .pillow-third-div .bottom {
+    height: 110%;
+}
+
+.pillow-first-div .top, .pillow-third-div .top {
+    grid-column: 2 / span 10;
+    grid-row: 1;
+    padding-top: 1%;
+    z-index: 6;
+}
+.pillow-second-div .top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top:20%;
+    z-index: 6;
+}
+
+.pillow-first-div .bottom, .pillow-second-div .bottom, .pillow-third-div .bottom {
+    grid-column: 4/ -1;
+    grid-row: 1;
+    z-index: 5;
+}
+
+.pillow1-details, .pillow2-details, .pillow3-details {
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.pillow1-details > h2, .pillow2-details > h2, .pillow3-details > h2 {
+    color: #795376;
+    font-weight: 400;
+}
+.pillow1-details > p, .pillow2-details > p, .pillow3-details > p {
+    color: #B688B2; 
+    margin-bottom: 1rem; 
+}
+.pillow1-details > button, .pillow2-details > button, .pillow3-details > button {
+    background: white;
+    color: var(--primary-dark);
+    margin-top: 2rem;
+}
+.pillow1-details > button:hover, .pillow2-details > button:hover, .pillow3-details > button:hover {
+    background: var(--primary-dark);
+    color: white;
+}
+
+@media screen and (max-width: 940px) {
+
+    .pillow-first-div, .pillow-third-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .pillow-second-div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pillow1-details, .pillow2-details, .pillow3-details {
+        margin: 1rem 1rem;
+    }
+    
+}

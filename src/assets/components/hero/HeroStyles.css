@@ -1,0 +1,42 @@
+.hero-main-div {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.hero-first-div {
+    display: flex;
+    margin-top: 10rem;
+    max-width: 50%;
+}
+.rectangle {
+    width: 12.166rem;
+    height: 38.625rem;
+    background-color: var(--primary-dark);
+}
+.hero-button {
+    background: var(--primary-dark);
+    width: 11rem;
+    height: 3.75rem;
+    margin-top: 4rem;
+}
+.hero-button:hover {
+    background: white;
+    color: var(--primary-dark);
+}
+h1 {
+    color: #4B3049;
+    font-weight: 400;
+}
+p {
+    color: var(--primary-light);
+}
+.hero-second-div {
+    margin-top: 5rem;
+}
+.hero-second-div > img {
+    max-width: 100%;
+}
+
+
